@@ -17,6 +17,8 @@ body::-webkit-scrollbar {
     background-attachment: fixed;
     padding-top: 1.2rem;
 }
+
+/* .horizontal-list */
 .bars{
     color: white;
     margin: 0;
@@ -33,22 +35,38 @@ body::-webkit-scrollbar {
     display: none;
     background-color: #828470;
     box-shadow: 0px 4px 8px 1px #535547;
+    
+    /* transition: all 3s ease-in-out; */
+
+   
 }
 
 .dropdown-list ul{
     margin: 0.2rem 0.2rem;
     text-align: left;
     padding: 0px 0.8rem;
+    
 }
+
+/* .dropdown-menu:hover{
+    height:200px;
+     background-color: red;
+    display: block;
+    position: absolute;
+    z-index: 1;
+     width: 150px; 
+  
+}  */
 
 .dropdown-menu:hover .dropdown-list{
     display: block;
     position: absolute;
-    left: 3%;
+    right: 3%;
 }
 
 .dropdown-list li{
-    margin: 0.6rem 0px;
+    margin: 0.4rem 0px;
+
 }
 
 .no-list-style{
@@ -66,27 +84,31 @@ body::-webkit-scrollbar {
     text-decoration: none;
 }
 .horizontal-list {
-    list-style: none;
+    /* list-style: none; */
     padding-left: 0px;
     margin: 20px;
 }
 
 
 .horizontal-list li{
+    display: inline-block;
+
     margin: 0px 20px 15px 0px;
     font-weight: 100;
     font-size: 0.9rem;
 background-color: rgb(10, 8, 8);
-    display: inline-block;
 }
 
 .horizontal-list li a {
     color: white;
+    
     text-decoration: none;
   
 }
 .horizontal-list li a:hover{
     /* border: white solid 2px; */
+   
+ /* background-color: hsl(201, 84%, 64%); */
     box-shadow: 0px 0px 6px 4px rgba(255, 255, 255, 0.5);
 
 }
@@ -97,8 +119,9 @@ background-color: rgb(10, 8, 8);
     text-align: center;
 }
 .nav-menu li a:hover {
-    color: rgb(254, 3, 3);
-    border-bottom: 1px solid rgb(255, 255, 255);
+    /* color: cyan; */
+    transform: scale(1.4);
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 /* Name and Social Icons*/
@@ -170,6 +193,7 @@ section:nth-child(2n + 1) {
     height: 12rem;
     width: 12rem;
     margin: auto;
+    /* margin-left: 33%; */
     margin-top: -17vh;
 }
 #my-image img {
@@ -504,7 +528,17 @@ button:focus {
 }
 
 
+.text-right{
+    text-align: right;
+}
 
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
     
 /* Common Margin Classes */
 
@@ -648,4 +682,8 @@ button:focus {
     .portfolio-details p{
         font-size: 0.85rem;
     }
+}
+
+.footer-image{
+width: 100%;
 }
